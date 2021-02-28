@@ -18,18 +18,18 @@ export class BusquedaComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  
   buscar(){
-
     const valor = this.txtBuscar.nativeElement.value;
     
-    //*Para que no envien string vacios
+    //*Para que no envien strings vacios
     if (valor.trim().length === 0) {
       return;
     }
-
+    
     this.gifsService.buscarGifs( valor );
-
+    
+    //*Reseteamos el input
     this.txtBuscar.nativeElement.value = '';
   }
 

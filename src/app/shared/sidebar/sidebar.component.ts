@@ -23,4 +23,9 @@ export class SidebarComponent implements OnInit {
     this.gifsService.buscarGifs(item);
   }
 
+  borrarHistorial(){
+    localStorage.clear();
+    this.gifsService.borrarHistorial();
+  }
+
 }

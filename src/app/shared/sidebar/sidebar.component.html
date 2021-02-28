@@ -5,5 +5,6 @@
 
     <div class="list-group list-reset text-center">
         <a href="#" class="list-group-item list-group-item-action mb-1" *ngFor="let item of historial" (click)="buscar( item )">{{item | titlecase}}</a>
+        <button class="btn btn-outline-secondary btn-sm" (click)="borrarHistorial()">Borrar historial</button>
     </div>
 </div>
